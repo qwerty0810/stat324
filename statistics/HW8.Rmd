@@ -1,0 +1,73 @@
+Gurusharan Kunusoth
+
+
+
+## 1 Pumpkins
+## 1a.
+
+```{r}
+x=c(9.6, 8.8, 5.1, 9.7, 9.1, 8.9, 8, 9.2, 2.7, 9.1, 8.5, 7.3, 9.3, 9.6, 4.1, 9.9, 7.6, 9, 7.2, 8.5)
+
+qqnorm(x, pch=1, frame=FALSE)
+qqline(x, col="blue", lwd=1)
+```
+
+According to the QQ plot, it is not reasonable to assume that the population is normal because the points are not closely aligned with the line.
+
+## 1b.
+
+```{r}
+conf=0.90
+alpha=1-conf
+B=2000
+bm={}
+for(i in 1:B){
+  set.seed(i)
+  bm[i]=mean(sample(x,20,replace=TRUE))
+}
+ci=quantile(bm,c(alpha/2,1-alpha/2))
+ci
+```
+90% confidence interval for the mean is (7.35,8.68)
+
+## 1c.
+
+
+i)p-value=0.039
+ii) Since, P-value<α, this data is strong evidence that the mean pumpkin is greater than 7.2
+
+## 1d.
+
+1.9468
+
+## 1e.
+
+0.0323
+
+## 1f.
+
+since,p-value < α, We  reject null hypothesis(Ho)
+there is strong evidence that the true median weight for this pumpkin farmer’s patch is greater than 7.2.
+
+## 2. Penguins
+## 2a.
+
+0.4
+
+## 2b.
+
+0.1096
+
+## 2c.
+
+(0.1852,0.6148)
+
+## 2d.
+
+P value = 0.0332
+
+since p value < 0.05, the result is significant
+
+We reject the null hypothesis that \pi=0.63
+
+At 0.05 level, the data provided strong evidence that proportion of female is diffrent from 0.63

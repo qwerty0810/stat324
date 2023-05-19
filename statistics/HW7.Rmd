@@ -1,0 +1,53 @@
+Gurusharan Kunusoth
+## 1. Skin wounds
+## 1a.
+
+```{r}
+x=c(29,27,34,40,22,28,14,35,26,35,12,30,23,18,11,22,23,33)
+
+qqnorm(x)
+qqline(x,col="blue")
+```
+From thw above plot, we can say that the population distribution is normal since the points are close to the central line.
+
+
+
+## 1b.
+25.66±3.227
+(22.254,29.808)
+
+## 1c.
+
+W dont reject H0 as 25 is in 90% interval
+
+## 1d.
+
+P-Value =0.3670114
+
+P-value=0.367>α=0.05
+so the data is not a strong evidnece of mean rate being less than 25
+
+## 1e.
+
+The correct options are:
+ii. Replace t17,.05 with z.05 = 1.645.
+iv. Replace s (calculated from the data) with σ = 8.
+
+
+## 2. Test and power
+## 2a.
+
+p-Value = 0.1877
+Conclusion: p-value>α=0.10
+Do not reject null hypothesis
+
+
+## 2b.
+
+α=0.10(since we dont reject null hypothesis)
+so it is plausible that 12 is in 90% interval
+
+## 2c.
+
+power = 1 - ß = 0.6178
+

@@ -1,0 +1,56 @@
+Gurusharan Kunusoth
+## 1. Ethanol
+## 1a.
+```{r}
+rem = c(63, 54, 69, 50, 72,45, 60, 40, 56,31, 40, 45, 25, 23,28)
+
+treatments = c(1,1,1,1,1,2,2,2,2,3,3,3,3,3,3)
+
+treatments = as.factor(treatments)
+
+boxplot(rem~treatments,xlab="Treatments",ylab="REM")
+```
+
+
+
+
+My intuition tells me that ANOVA will reject $H_0$ since the mean REM sleep time seems to be different in each treatment sample.
+
+## 1b.
+```{r}
+aov.out = aov(rem~treatments)
+aov.out
+summary(aov.out)
+
+```
+
+
+## 1c.
+```{r}
+qqnorm(rem,pch=16)
+plot(aov.out)
+```
+
+
+
+
+As, the graph is linear, the normality condition is satisfied.
+
+The residual plot is created by the command plot(aov.out). As there is no specific pattern , constant variance condition is also satisfied.
+
+
+
+
+## 1d.
+
+As the p-value is less than 0.05, we reject the null hypothesis and conclude that the effect of treatments on amount of REM sleep is significant.
+
+
+
+## 1e.
+
+```{r}
+TukeyHSD(aov.out)
+plot(TukeyHSD(aov.out))
+```
+Treatment 1 and treatment 3 population means are different and Treatment 2 and Treatment 3 population means are different since both the CIs associated with the differences of these populations exclude 0

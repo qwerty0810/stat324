@@ -1,0 +1,68 @@
+# (Gurusharan Kunusoth)
+# 1. Gambler
+## 1a.
+$Probability$ $mass$ $function$ $for$ $X_{dice}$:
+
+$x$    | 1   | 2   | 3   | 4   | 5   | 6
+-------|-----|-----|---- |-----|-----|-----
+$p(x)$ | 0.12| 0.12|0.12 | 0.12| 0.12| 0.4
+
+
+## 1b.
+
+$P(even)$=0.64
+
+## 1c.
+$E(X)=4.2, VAR(X)=3.36$
+
+## 1d.
+
+$i)$ 12.6
+$ii)$ 4.0988
+
+# 2. Colleges
+
+$P(X=2)$=0.23
+
+# 3. Airlines
+## 3a
+
+The assumptions are:
+1. The two outcomes are: The booked passenger arrives and the booked passenger does not arrive
+2. The Sample size 'number of tickets sold' or 'number of passengers' must be finite and independent. 
+3. The probability of number of booked passengers arrived should be the same as booked passengers who did not arrive.
+
+## 3b
+
+$P(X=51)$=0.190054
+
+## 3c
+
+$E(X)=49.4, VAR(X)=2.47$
+
+# 4 Goombas and Koopa Troopas
+## 4a
+
+$P(13<=X<=15)$=0.1252
+
+## 4b.
+
+$75th$ $percentile$ $for$ $Goombas$=16.047
+$P(X>16.047)$=0.3635
+
+## 5. Temperatures
+## 5a.
+
+$P(F>93.8)$=0.2236
+
+## 5b.
+
+$E(X)=32.22, VAR(X)=7.716$
+
+## 5c.
+
+$P(C<29)$=0.123
+
+## 5d.
+
+30.3611

@@ -1,0 +1,50 @@
+Gurusharan Kunusoth
+
+## 1. Oximeters
+## 1a.
+
+98% confidence interval for the true difference in mean readings from the two oximeters is 1.717 to 2.683
+
+## 1b.
+p-value=0, and since p=0<0.02, it is concluded that the null hypothesis is rejected.
+
+Null hypothesis Ho is rejected. Therefore, there is enough evidence to claim that the population mean μ_1 is different than μ_2, at the α=0.02 significance level.
+
+
+## 2. Dairy
+## 2a.
+
+```{r}
+Old_Diet= c(43, 51, 44, 47, 38, 46, 40, 35)
+New_Diet= c(47, 75, 85, 100, 58)
+hist(Old_Diet, xlim=c(0,100))
+hist(New_Diet, xlim=c(0,100))
+qqnorm(Old_Diet)
+qqline(Old_Diet)
+qqnorm(New_Diet)
+qqline(New_Diet)
+```
+
+I chose histogram to see the difference in mean and qqplot to see if the samples can be assumed from a normal population.
+From the qqplots, we can say that both fo them are from normal population.
+
+
+## 2b.
+
+```{r}
+sd(Old_Diet)
+sd(New_Diet)
+mean(Old_Diet)
+mean(New_Diet)
+```
+
+
+Standard deviation of old diet=5.18
+Standard deviation of new diet=21.1
+
+test statistic=-3.12
+degree of freedom= 4.3
+p-value=0.035
+p-value<0.05
+So, we can say that the milk produced by using new diet is significantly different form old one.
+

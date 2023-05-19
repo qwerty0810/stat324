@@ -1,0 +1,78 @@
+Gurusharan Kunusoth
+## 1. Math
+## 1a.
+
+```{r}
+pre = c(83, 81, 70, 79,69, 61, 88, 72, 86)
+final = c(68, 59, 72, 75, 55, 52, 81, 63, 70)
+plot(x=pre, y=final) 
+```
+
+
+
+From scatter plot,
+
+form:linear
+
+strength:strong
+
+direction :positive
+
+Therefore, there exists a positive relationship betwen pre test and Final_course_percentage
+
+
+## 1b.
+
+```{r}
+cor(x=pre, y=final)
+```
+
+r=0.7056401
+
+there exists a stromg positive relationship between pre test and Final_course_percentage
+
+
+## 1c.
+
+```{r}
+model = lm(pre ~ final) # lm(y ~ x) gives linear model
+model
+```
+
+
+β0=32.7340
+
+β1=0.6628
+
+## 1d.
+
+plot(x=pre, y=final, xlim=c(0,100), ylim=c(0, 100)) 
+abline(model)
+
+## 1e.
+
+```{r}
+model$coefficients[1] + model$coefficients[2] * 80
+```
+
+
+
+
+Final ScoreP rediction=85.76
+
+
+## 1f.
+
+```{r}
+qqnorm(residuals(model))
+plot(x=fitted(model), y=residuals(model))
+
+summary(model)
+confint(model)
+```
+
+## 1g.
+
+
+
+CI: (0.0679, 1.257)

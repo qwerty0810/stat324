@@ -1,0 +1,22 @@
+Gurusharan
+
+Mean and Median
+```{r}
+# Use the c() ("combine") function to combine numbers into a vector;
+# save it in a new variable called "hp".
+hp = c(120, 110, 93, 98, 175, 85, 100, 245, 62) # horsepowers of 9 cars
+mean(hp) # find the mean (average) of the horsepowers
+median(hp) # find the median horsepower
+```
+Histogram:
+```{r}
+hist(hp, main="car horsepower") # make a histogram of the horsepowers
+rug(hp) # add the data points themselves to the histogram
+```
+
+Boxplot:
+```{r}
+boxplot(hp, horizontal=TRUE) # make a boxplot
+rug(hp) # add data points to boxplot
+```
+

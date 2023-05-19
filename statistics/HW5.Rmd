@@ -1,0 +1,28 @@
+Gurusharan Kunusoth
+
+# 1 Confidence interval for dissolved oxygen
+## 1a
+
+9.14 ± 0.70
+
+## 1b
+
+98% confidence that the interval contains the true population mean, µ. That is, if we collect many simple random samples of size 44 and find an interval corresponding to each sample, we
+would expect about 98% of those intervals to contain µ.
+
+## 1c
+
+87
+
+## 1d
+
+```{r}
+oxygen = c(11.53, 8.35, 11.66, 11.54, 9.83, 5.92, 7.14, 8.41, 8.99, 13.81,
+10.53, 7.4, 6.7, 8.42, 8.4, 8.18, 9.5, 7.22, 9.87, 6.52, 8.55,
+9.75, 9.27, 10.61, 8.89, 10.01, 11.17, 7.62, 6.43, 9.09, 8.53,
+7.91, 8.13, 7.7, 10.45, 11.3, 10.98, 8.14, 11.48, 8.44, 12.52,
+10.12, 8.09, 7.34)
+qqnorm(oxygen)
+qqline(oxygen)
+```
+Yes, it is plausible the sample came from a normal population.

@@ -1,0 +1,27 @@
+(Gurusharan Kunusoth)
+## 1. Test for dissolved oxygen
+## 1a.
+
+Cumulative area of test statistic=-2.85
+p-value=0.0044
+
+## 1b.
+
+The conclusion is that the significant p-value in the context is less than 0.02 which is 0.0046, so the null hypothesis is rejected at 2% level of significance. There is sufficient evidence to indicate that the population mean dissolved oxygen content is different from 10. The result is statistically significant.
+
+## 2. Pain-killing drug
+## 2a.
+
+α
+
+## 2b.
+
+1-β
+
+## 2c.
+
+1-α
+
+## 2d.
+
+β

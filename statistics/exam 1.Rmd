@@ -1,0 +1,93 @@
+## 1
+
+## 2a
+1.00
+## 2b
+0.6
+## 2c
+0.375
+## 3a
+8
+## 3b
+II
+## 4a
+14.78
+## 4b
+0.954
+## 4c
+qnorm(0.01,14.7,0.1)
+## 5a
+0.338
+## 5b
+1.20
+## 5c
+0.30
+## 6a
+ab
+## 6b
+S~Bin(n,a)
+## 6c
+X~Bin(n,a)
+## 7a
+No.
+## 7b
+67.2
+## 7c
+4.6
+## 7d
+107
+## 8
+If the district were to collect many random samples of size 20, about 99% of those intervals would contain the district third-grade population mean score.
+
+Decreasing the confidence level from 99% to 90% and calculating the interval again would yield a narrower interval.
+
+If the sample mean is not in the center 99% of the distribution of sample means (for n=20), then the interval does not contain the population mean.
+## 9a
+a
+## 9b
+b
+## 9c
+a
+## 9d
+d
+## 9e
+a and d
+## 10
+As n increases, the standard deviation of the distribution of the sample mean tends toward 0.
+
+As n increases, the standard deviation of the first item in the sample tends toward 0.
+## 11a
+4
+## 11b
+1
+## 11c
+5
+## 11d
+2
+## 11e
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
